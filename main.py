@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+from sys import argv
 from random import random, randint
 from math import factorial, e
 
@@ -49,7 +50,13 @@ def getRandomSet(n, b):
     return b
 
 if __name__ == "__main__":
-    print(genBellNumbers(10))
-    for i in range(1000):
-        b = getBellNumber(3)
-        print(' '.join(map(str, getRandomSet(3, b))))
+    if len(argv) < 3:
+        print("Usage: ./main.py N K\n")
+        print("N: set size")
+        print("K: number of random set partions to generate")
+        exit(0)
+    N = int(argv[1])
+    K = int(argv[2])
+    b = getBellNumber(N)
+    for i in range(K):
+        print(' '.join(map(str, getRandomSet(N, b))))
