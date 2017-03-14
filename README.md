@@ -28,7 +28,7 @@ Generate 100 random partitions of size 10 sets
 
 ## Recommendations
 - If speed is needed and N is big, you can pre-compute the needed Bell Numbers, save them into a file and use that instead of the built in Bell number function.
-- The same cache trick can be applied for the Unm function, although m can be infinite, the probability of big m appearing in almost 0, computing it up to 2*N should be more than enogh
+- The same cache trick can be applied for the Unm function, although m can be infinite, the probability of big a m appearing converges to 0, computing it up to 2*N should be more than enogh
 
 
 
