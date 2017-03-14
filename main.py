@@ -53,7 +53,7 @@ if __name__ == "__main__":
     if len(argv) < 3:
         print("Usage: ./main.py N K\n")
         print("N: set size")
-        print("K: number of random set partions to generate")
+        print("K: number of random set partitions to generate")
         exit(0)
     N = int(argv[1])
     K = int(argv[2])
